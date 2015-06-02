@@ -12,6 +12,12 @@ describe('Token', function() {
 			});
 			expect(newToken.type).to.equal("someToken");
 		});
+		it ('should set the attributeValue from the rawToken', function() {
+			var newToken = new Token({
+				attributeValue: "someAttributeValue"
+			});
+			expect(newToken.attributeValue).to.equal("someAttributeValue");
+		});
 	});
 	describe('getMetadata', function() {
 		it ('', function() {
