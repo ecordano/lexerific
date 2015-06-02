@@ -6,13 +6,13 @@ var Token = require('../lib/Token');
 
 describe('Token', function() {
 	describe('constructor', function() {
-		it ('should set the type from the rawToken', function() {
+		it ('Should set the type from the rawToken', function() {
 			var newToken =  new Token({
 				token: "someToken"
 			});
 			expect(newToken.type).to.equal("someToken");
 		});
-		it ('should set the attributeValue from the rawToken', function() {
+		it ('Should set the attributeValue from the rawToken', function() {
 			var newToken = new Token({
 				attributeValue: "someAttributeValue"
 			});
@@ -20,13 +20,15 @@ describe('Token', function() {
 		});
 	});
 	describe('getMetadata', function() {
-		it ('', function() {
-
+		it ('Should return the _meta from the Token', function() {
+			var newToken = new Token();
 		});
+		expect(newToken.getMetadata()).to.equal(newToken._meta)
 	});
 	describe('toObject', function() {
-		it ('', function() {
+		it ('Should', function() {
 
 		});
 	});
 });
+
